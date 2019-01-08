@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  get 'products/new'
-  get 'products/create'
-  get 'products/edit'
-  get 'products/update'
-  get 'products/destroy'
   resources :products
   resources :order_items
   resource :carts, only: [:show]
